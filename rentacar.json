@@ -1,0 +1,170 @@
+{
+  "brands": [
+    {
+      "name": "Mercedes-Benzz",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "Audi"
+    },
+    {
+      "name": "BMW",
+      "id": 3
+    },
+    {
+      "name": "Rolls Royce",
+      "id": 4
+    }
+  ],
+  "cars": [
+    {
+      "carName": "Mercedes-Benz",
+      "carDetail": "CLA 200",
+      "colorId": 1,
+      "brandId": "1",
+      "carDescription": "Büyük fikirler garajlarda doğar. İşte tam burada inovasyonları sihirle buluşuyor.aa",
+      "description": "Benzin",
+      "plate": "34 D 2083",
+      "state": "1",
+      "image": "https://cdn.motor1.com/images/mgl/OjM2L/s1/4x3/nuova-mercedes-cla.webp",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "brandId": 2,
+      "carName": "Audi",
+      "carDetail": "Rs6",
+      "carDescription": "SUV'un gücünü dört kapılı bir coupé'nin zarafetiyle birleştiriyor.",
+      "description": "Dizel",
+      "colorId": 2,
+      "plate": "34 D 2167",
+      "state": 0,
+      "image": "https://www.dogusoto.com.tr/Dosyalar/Model/Audi/galeri%20g%C3%B6rselleri/Yeni%20A3%20Sportback/a3-sportback-lansman-banner.jpg"
+    },
+    {
+      "carName": "BMW",
+      "carDetail": "5.35i",
+      "colorId": 3,
+      "brandId": "3",
+      "carDescription": "Yeni bir çağın öncüsü, yeni 5 serisi. Yeni bir çağın öncüsü, yeni 5 serisi.",
+      "description": "Dizel",
+      "plate": "34 HF 7329",
+      "state": "2",
+      "image": "http://turboperformans.com/wp-content/uploads/2020/05/bmw-5-2-1200x640.jpg",
+      "id": 3
+    },
+    {
+      "carName": "Rolls Roycea",
+      "carDetail": "Ghost",
+      "colorId": 4,
+      "brandId": "4",
+      "carDescription": "Perde ötesinde bir görüş Perde ötesinde bir görüş Perde",
+      "description": "Dizel",
+      "plate": "34 TY 9337",
+      "state": "0",
+      "image": "https://www.motortrend.com/uploads/sites/5/2020/12/2021-Rolls-Royce-Ghost.jpg?fit=around%7C875:492",
+      "id": 5
+    },
+    {
+      "carName": "Mercedes-Benz",
+      "carDetail": "E 180",
+      "colorId": "5",
+      "brandId": "1",
+      "carDescription": "Eşsiz konfor rakipsiz güçle birleşti.",
+      "description": "Benzin",
+      "plate": "34 BVB 627",
+      "state": "1",
+      "image": "https://arabam-blog.mncdn.com/wp-content/uploads/2019/04/kapak-Mercedes-Benz-E180-2019-1-1-e1556545137438.jpg",
+      "id": 6
+    },
+    {
+      "carName": "Mercedes-Benz",
+      "carDetail": "S Class",
+      "colorId": "1",
+      "brandId": "1",
+      "carDescription": "S Class businnesle birleşti.",
+      "description": "Dizel",
+      "plate": "34 SD 9127",
+      "state": "1",
+      "image": "https://www.topgear.com/sites/default/files/2022/03/1-Mercedes-S-Class-plug-in.jpg",
+      "id": 7
+    },
+    {
+      "carName": "Audi",
+      "carDetail": "E-Tron",
+      "colorId": "2",
+      "brandId": "2",
+      "carDescription": "Bugün, özgürlüğün yarını.",
+      "description": "Elektrik",
+      "plate": "34 HS 4627",
+      "state": "1",
+      "image": "https://cdn.carbuzz.com/gallery-images/2023-audi-e-tron-s-front-view-carbuzz-1021234-1600.jpg",
+      "id": 8
+    },
+    {
+      "carName": "BMW",
+      "carDetail": "E60 M5",
+      "colorId": "3",
+      "brandId": "3",
+      "carDescription": "Güç, hayal ötesinde.",
+      "description": "Benzin",
+      "plate": "34 SJC 6736",
+      "state": "1",
+      "image": "https://3.bp.blogspot.com/-ZD5ZIy1nJ1Y/V0vvz-f1gfI/AAAAAAAAAGM/Bz7erpnlhs4ppoKkAmajz5sfGxGmZEnJACLcB/s1600/bmw_e60_m5-51fuig.jpg",
+      "id": 9
+    },
+    {
+      "carName": "Rolls Royce",
+      "carDetail": "Cullinans",
+      "colorId": "1",
+      "brandId": "4",
+      "carDescription": "Premium bu kadar şık olmamıştı.",
+      "description": "Dizel",
+      "plate": "34 TS 3632",
+      "state": "1",
+      "image": "https://blog.dupontregistry.com/wp-content/uploads/2022/06/2022-rolls-royce-cullinan-699000-599045489-916x570.webp",
+      "id": 10
+    }
+  ],
+  "colors": [
+    {
+      "id": 1,
+      "name": "Siyah"
+    },
+    {
+      "id": 2,
+      "name": "Mavi"
+    },
+    {
+      "name": "Beyaz",
+      "id": 3
+    },
+    {
+      "name": "Bej",
+      "id": 4
+    },
+    {
+      "name": "Gümüş",
+      "id": 5
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "abc@hotmail.com",
+      "name": "Uğur",
+      "lastName": "Meydanlı",
+      "password": "1234",
+      "token": "HTRDASD34345ASDASK",
+      "expiration": "01/01/2022"
+    },
+    {
+      "email": "meydanliugur@gmail.com",
+      "name": "Uğur",
+      "lastName": "meydanlı",
+      "password": "123456",
+      "id": 2
+    }
+  ]
+}

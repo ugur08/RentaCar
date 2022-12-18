@@ -1,0 +1,161 @@
+<form [formGroup]="carAddForm">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Araç Adı*</label>
+    <input
+      type="email"
+      class="form-control"
+      aria-describedby="emailHelp"
+      formControlName="carName"
+    />
+    <div
+      class="form-text"
+      *ngIf="
+        carAddForm.get('carName')?.hasError('required') &&
+        carAddForm.get('carName')?.dirty
+      "
+      class="form-text text-muted"
+    >
+      Minimum 2 karakter girin
+    </div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Araç Modeli*</label>
+    <input
+      type="email"
+      class="form-control"
+      aria-describedby="emailHelp"
+      formControlName="carDetail"
+    />
+    <div
+      class="form-text"
+      *ngIf="
+        carAddForm.get('carDetail')?.hasError('required') &&
+        carAddForm.get('carDetail')?.dirty
+      "
+      class="form-text text-muted"
+    >
+      Minimum 2 karakter girin
+    </div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Renk*</label>
+    <input
+      type="email"
+      class="form-control"
+      aria-describedby="emailHelp"
+      formControlName="colorId"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Marka ID*</label>
+    <input
+      type="email"
+      class="form-control"
+      aria-describedby="emailHelp"
+      formControlName="brandId"
+    />
+    <div
+      class="form-text"
+      *ngIf="
+        carAddForm.get('brandId')?.hasError('required') &&
+        carAddForm.get('brandId')?.dirty
+      "
+      class="form-text text-muted"
+    ></div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Açıklama*</label>
+    <input
+      type="email"
+      class="form-control"
+      aria-describedby="emailHelp"
+      formControlName="carDescription"
+    />
+    <div
+      class="form-text"
+      *ngIf="
+        carAddForm.get('carDescription')?.hasError('required') &&
+        carAddForm.get('carDescription')?.dirty
+      "
+      class="form-text text-muted"
+    >
+      Minimum 2 karakter girin
+    </div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Yakıt Türü*</label>
+    <input
+      type="email"
+      class="form-control"
+      aria-describedby="emailHelp"
+      formControlName="description"
+    />
+    <div
+      class="form-text"
+      *ngIf="
+        carAddForm.get('description')?.hasError('required') &&
+        carAddForm.get('description')?.dirty
+      "
+      class="form-text text-muted"
+    >
+      Minimum 2 karakter girin
+    </div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Plaka*</label>
+    <input
+      type="email"
+      class="form-control"
+      aria-describedby="emailHelp"
+      formControlName="plate"
+    />
+    <div
+      class="form-text"
+      *ngIf="
+        carAddForm.get('plate')?.hasError('required') &&
+        carAddForm.get('plate')?.dirty
+      "
+      class="form-text text-muted"
+    >
+      Minimum 2 karakter girin
+    </div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Durum*</label>
+    <input
+      type="email"
+      class="form-control"
+      aria-describedby="emailHelp"
+      formControlName="state"
+    />
+    <div
+      class="form-text"
+      *ngIf="
+        carAddForm.get('state')?.hasError('required') &&
+        carAddForm.get('state')?.dirty
+      "
+      class="form-text text-muted"
+    ></div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Görsel Url*</label>
+    <input
+      type="email"
+      class="form-control"
+      aria-describedby="emailHelp"
+      formControlName="image"
+    />
+    <div
+      class="form-text"
+      *ngIf="
+        carAddForm.get('image')?.hasError('required') &&
+        carAddForm.get('image')?.dirty
+      "
+      class="form-text text-muted"
+    >
+      Minimum 2 karakter girin
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-primary" (click)="add()">Ekle</button>
+</form>

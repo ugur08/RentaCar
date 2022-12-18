@@ -1,0 +1,60 @@
+<form [formGroup]="carForm">
+  <div class="mb-3">
+    <label for="" class="form-label">Araç Adı*</label>
+    <input type="text" class="form-control" formControlName="carName" />
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Modeli*</label>
+    <select
+      formControlName="brandId"
+      class="form-select"
+      id="brandId"
+      *ngIf="updateBrandForm"
+    >
+      <option [value]="brand.id" *ngFor="let brand of brands">
+        {{ brand.name }}
+      </option>
+    </select>
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Renk*</label>
+
+    <select
+      formControlName="colorId"
+      class="form-select"
+      id="colorId"
+      *ngIf="updateBrandForm"
+    >
+      <option [value]="color.id" *ngFor="let color of colors">
+        {{ color.name }}
+      </option>
+    </select>
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Marka ID*</label>
+    <input type="text" class="form-control" formControlName="brandId" />
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Açıklama*</label>
+    <input type="text" class="form-control" formControlName="carDescription" />
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Yakıt Türü*</label>
+    <input type="text" class="form-control" formControlName="description" />
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Plaka*</label>
+    <input type="text" class="form-control" formControlName="plate" />
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Durum*</label>
+    <input type="text" class="form-control" formControlName="state" />
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Görsel Url*</label>
+    <input type="text" class="form-control" formControlName="image" />
+  </div>
+  <button (click)="update()" type="submit" class="btn btn-primary">
+    Güncelle
+  </button>
+</form>

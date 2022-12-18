@@ -1,0 +1,26 @@
+<div class="card text-bg-light" *ngFor="let car of cardetails">
+  <img src="{{car.image}}" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <h1 class="card-title text-light">{{car.carName}}</h1>
+    <p class="card-text text-light">{{car.carDetail}}</p>
+    <p class="card-text text-light">{{car.carDescription}}</p>
+  </div>
+  <div class="card-body">
+      <h5 class="card-title">{{car.carDetail}}</h5>
+          <p>{{car.description}}</p>
+          <p>{{car.plate}}</p>
+      <p class="card-text">Dinamik. Lüks.<br>
+          Tasarım: Sportifliğin ifadesi. C-Serisi Sedan'da modernlik, lüks ile buluşuyor.<br><br>
+          İçeri gelin ve rahat bir nefes alın.<br>
+          Öne çıkan çok sayıda yenilikçi konfor özelliği yolculuğunuzu daha rahat hale getirir. Daha fazlasını keşfedin.<br><br>
+          Kesinlikle bir Mercedes-Benz.<br>
+          Sürüş Yardım Paketi’nin yeni nesli, standartları tekrar belirliyor.
+      </p>
+      <div class="card text-end">
+          <button routerLink="" type="submit" class="btn btn-primary">Geri Dön</button>
+      </div>
+  </div>
+
+ 
+
+</div>

@@ -1,0 +1,24 @@
+<form [formGroup]="colorAddForm">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Color Adı*</label>
+    <input
+      type="email"
+      class="form-control"
+      id="exampleInputEmail1"
+      aria-describedby="emailHelp"
+      formControlName="name"
+    />
+    <div
+      id="emailHelp"
+      class="form-text"
+      *ngIf="
+        colorAddForm.get('name')?.hasError('required') &&
+        colorAddForm.get('name')?.dirty
+      "
+      class="form-text text-muted"
+    >
+      Minimum 2 karakter girin
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary" (click)="add()">Ekle</button>
+</form>
